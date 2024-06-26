@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(45deg, #FFA500, #FF69B4); 
+    
+    color: #000; 
+}
+
+
+header {
+    background-color: #c90453;
+    text-align: center;
+    padding: 2rem 0;
+    border: 3px double black;
+}
+
+header h1,p{
+    margin: 0;
+    color: rgb(8, 8, 8);
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+header h1:hover{
+    color: white;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
+
+section {
+    padding: 2rem;
+    margin: 2rem 0;
+}
+
+#about img {
+    display: block;
+    max-height: 300px;
+    max-width: 300px;
+    border-radius: 30%;
+    margin: 1rem auto;
+    border: 2px solid lightgray;
+}
+#about h2:hover,#skills h2:hover{
+    color: white;
+}
+
+#about i{
+    font-size: 1.4rem;
+    color: #000;
+    text-shadow: #333;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+#about a,#resume a,#contact a {
+    color: #3010e3;
+}
+#about h2 , #skills h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#skills li {
+    background-color: #e7346c;
+    color: #000;
+    border-radius:25%;
+    border: 3px solid rgb(23, 23, 23);
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.1rem;
+}
+#skills li:hover{
+    background-color: #db523c;
+}
+.project h3{
+    text-align: center;
+}
+
+.project {
+    background-color: #e23c22;
+    border: 1px solid #dfd8d8;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+.project:hover{
+    background-color:#eb5942 ;
+}
+.project a{
+    color: #3010e3;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+
+footer {
+    height: 80px;
+    background-color: #232323;
+    text-align: center;
+    padding: 1rem 0;
+}
+footer p{
+    color: white;
+}
+
+header h1 {
+    font-size: 3rem;
+}
+
+header p {
+    font-size: 1.5rem;
+}
+
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1rem;
+}
+
+.project {
+    border: 2px solid #080808;
+    padding: 1rem;
+    border-radius: 10%;
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+}
+.project p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2rem;
+}
+
+
+@media (max-width: 600px) {
+    #projects {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+
+
